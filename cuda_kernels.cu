@@ -5,14 +5,13 @@
 
 __global__ void square(float* d_in, float* d_out) {
 
-    int idx = threadIdx.x;
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
     float f = d_in[idx];
     d_out[idx] = f * f;
-
 }
 
 __global__ void vector_dot_product(float* u, float* v, float* out) {
 
-
+    int idx = threadIdx.x;
 
 }

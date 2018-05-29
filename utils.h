@@ -5,6 +5,8 @@
 #ifndef CUDASAMPLES_UTILS_H
 #define CUDASAMPLES_UTILS_H
 
+#include <cstdio>
+
 void print_array(float* array, int size);
 
 #endif //CUDASAMPLES_UTILS_H

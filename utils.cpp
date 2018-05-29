@@ -3,7 +3,6 @@
 //
 
 #include "utils.h"
-#include <cstdio>
 
 void print_array(float* array, int ARRAY_SIZE) {
     for (int j = 0; j < ARRAY_SIZE; ++j) {
