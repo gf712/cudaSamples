@@ -28,5 +28,8 @@ extern uint3 threadIdx;
 #endif
 
 __global__ void square(float* d_in, float* d_out);
+__global__ void vector_dot_product(float* u, float* v, float* out);
+
+//void square_cpp(float *h_in, float *h_out, int ARRAY_SIZE, int ARRAY_BYTES);
 
 #endif //CUDASAMPLES_CUDA_KERNELS_H
